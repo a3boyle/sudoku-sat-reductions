@@ -1,9 +1,9 @@
 # Solving 9x9 Sudoku with SAT Reductions
-## Written by Aidan Boyle (20840670)
+## Written by Aidan Boyle
 This project contains 2 executables, sud2sat and sat2sud. sud2sat takes a partially solved sudoku board as input, where blanks are represented by
 0, ., * or ? and the nonblanks are positive integers ranging from 1,...,9.
 Note that the input can contain any number of space or newline characters
-After reading from STDIN, sud2sat converts the board into a CNF boolean formula, as outline
+After reading from STDIN, sud2sat converts the board into a CNF boolean formula, as outlined
 in the paper *Sudoku as a SAT problem* by Inês Lynce and Joël Ouaknine, such that
 the boolean formula created is satisfiable if and only if the board has a solution. The boolean formula is written to STDOUT
 in the standard SAT-challenge (DIMACS) format. From here the CNF description can then 
